@@ -1,7 +1,7 @@
 # Claudia
 A bare-bones, PM-based riff on the Le Chiffre 30% keyboard by tominabox1 https://github.com/tominabox1/Le-Chiffre-Keyboard.git
 
-Originally intended to be used caseless and plateless, but plate files for skeleton setup are available.
+This is a fun board when used in fully stripped-down mode, but a number of case and plate options are available
 
 ![Claudia mx](https://user-images.githubusercontent.com/69826495/145114783-9377d505-96f0-4ca2-9c3a-e4ac3f289a7a.jpeg)
 
