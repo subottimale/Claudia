@@ -17,13 +17,6 @@
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID 0x534f
-#define PRODUCT_ID 0x636c
-#define DEVICE_VER 0x0001
-#define MANUFACTURER OTTIMO
-#define PRODUCT Claudia
-
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 10
@@ -40,40 +33,9 @@
  */
 #define MATRIX_ROW_PINS { B5, B4, E6, D7 }
 #define MATRIX_COL_PINS { F6, D1, D0, D4, C6, B6, B2, B3, B1, F7 }
-#define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION ROW2COL
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
-
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
-
-/* Define encoder pads */
-#define ENCODERS_PAD_A { D5 }
-#define ENCODERS_PAD_B { D3 }
-
-/*
- * WS2812 Underglow Matrix options
- */
-#define RGB_DI_PIN F0
-#define RGBLED_NUM 11
-
-#define DRIVER_LED_TOTAL RGBLED_NUM
-
-#define RGBLIGHT_ANIMATIONS
-
-#ifdef RGB_MATRIX_ENABLE
-#define RGB_MATRIX_KEYPRESSES // reacts to keypresses
-#define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 150 // limits maximum brightness of LEDs to 150 out of 255. Higher may cause the controller to crash.
-#define RGB_MATRIX_HUE_STEP 8
-#define RGB_MATRIX_SAT_STEP 8
-#define RGB_MATRIX_VAL_STEP 8
-#define RGB_MATRIX_SPD_STEP 10
-#endif
